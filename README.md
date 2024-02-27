@@ -41,7 +41,7 @@ Kuidas chatGPT lubab saada paremaks programmeerijaks: https://www.youtube.com/wa
 
 Kasuta github desktopi rakendust või siis antud õpetust: 
 
-1. *Fork*'i ülesande/projekti repositoorium (leiab [https://github.com/eesrakendused-2023/](https://github.com/eesrakendused-2023/)).
+1. *Fork*'i ülesande/projekti repositoorium (leiab [https://github.com/eesrakendused-2024/](https://github.com/eesrakendused-2024/)).
 1. *Clone*'i see repositoorium enda arvutisse/serverisse ja määra repositooriumi URL kuhu edaspidi muudatusi salvestad.
   ```
   git clone https://YOURUSERNAME@github.com/YOURUSERNAME/REPOSITORY.git
