@@ -1,0 +1,58 @@
+ html {
+    padding: 0;
+    margin: 0;
+ }
+
+body {
+    font-family: "Anta", sans-serif;
+    color: white;
+    background: radial-gradient(#461616 20%, #000000 80%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+#authorContainer {
+    display: flex;
+}
+
+#authorName, #authorRepository{
+    margin: 5px;
+}
+
+
+#clockContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+#clock {
+    font-size: 2em;
+    transition: transform 0.1s ease;
+}
+
+#clock, #dateElement, #day {
+    display: flex;
+}
+
+#dateElement>div{
+    padding-right: 10px;
+}
+
+#hours, #minutes, #seconds {
+    font-size: 130px;
+}
+
+#dayElement, #monthElement, #yearElement, #day {
+    font-size: 25px;
+}

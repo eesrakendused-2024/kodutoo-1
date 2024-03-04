@@ -3,11 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="clock.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <script src="clock.js" defer></script>
     <title>Kell</title>
 </head>
 <body>
-    <h1>Pealkiri</h1>
+
+    <div id="authorContainer">
+        <div id="authorName">Liisi Loomets</div>
+        <div id="authorRepository"><a href="https://github.com/LLoomets/Eesrakendused-Kell">Repositoorium</a></div>
+    </div>
+
+    <div id="clockContainer">
+        <div id="clock">
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
+        </div>
+        
+        <div id="dateElement">
+            <div id="day">Tänane kuupäev</div>
+            <div id="dayElement">kuupäev</div>
+            <div id="monthElement">kuu</div>
+            <div id="yearElement">aasta</div>
+        </div>
+
+        <div id="dropMenu">
+            <label for="timezoneSelector">Select Timezone:</label>
+            <select id="timezoneSelector" onchange="updateTimezone()">
+                <option value="America/New_York">New York</option>
+                <option value="Europe/London">London</option>
+                <option value="Asia/Tokyo">Tokyo</option>
+                <!-- Add more options for different time zones -->
+            </select>
+        </div>
+    </div>
 </body>
 </html>
