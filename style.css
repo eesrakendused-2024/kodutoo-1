@@ -1,0 +1,72 @@
+#upperRightText {
+    position: absolute;
+    justify-content: right;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    padding-top: 10px; /* Optional padding to give some space from the top */
+}
+
+#daynightmode {
+    width: 150px;
+    background-color: green;
+    font-size: 25px;
+    padding: 2px;
+    border: 0px solid white;
+    color: white;
+}
+
+#daynightmode:hover {
+    background-color: darkgreen;
+    color: grey;
+}
+
+#clock, #dateElement{
+    display: flex;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#dateElement>div{
+    padding-right: 10px;
+}
+
+#outerContainer {
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#clockContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to the top */
+    align-items: flex-start; /* Align to the left */
+    height: 100vh;
+    position: relative;
+    margin: 10px; /* Optional margin to give some space from the edges */
+}
+
+#hoursElement{
+    background-color:aqua;
+}
+
+#minutesElement{
+    background-color:rgb(0, 136, 255);
+}
+
+#hoursElement{
+    background-color:darkgoldenrod;
+}
+
+body{
+    background-color:rgb(24, 171, 171);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="clock.js" defer></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>First assignment - Mait Rungi</title>
+</head>
+<body>
+    <div id="upperRightText">Developed by Mait Rungi and ChatGPT</div>
+    <div id="buttonContainer">
+        <input type="button" value="Night Mode" id="daynightmode">
+    </div>
+    <div id="languageDropdown">
+        <label for="languageSelect">Select Language: </label>
+        <select id="languageSelect">
+            <option value="estonian">Estonian</option>
+            <option value="english">English</option>
+        </select>
+    </div>  
+    <div id="outerContainer">
+        <div id="clockContainer">
+            <div id="clock">
+                <div id="hoursElement"></div>
+                <div id="minutesElement"></div>
+                <div id="secondsElement"></div>
+            </div>
+            <div id="dateElement">
+                <div id="dayElement"></div>
+                <div id="monthElement"></div>
+                <div id="yearElement"></div>
+            </div>
+            <div id="day">Tänane nädalapäev</div>
+        </div>
+    </div>
+</body>
+</html>
