@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(176, 238, 255);
+}
+
+#clockContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80dvh;
+
+
+}
+
+#clock,
+#dateElement {
+    display: flex;
+
+}
+
+#dateElement {
+    background-color: rgb(190, 253, 253);
+    border-radius: 10%;
+    align-items: center;
+}
+
+#bottomEl {
+    display: flex;
+    justify-content: space-between;
+}
+
+#clock {
+    justify-content: center;
+    font-size: 200px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#dateElement>div {
+    padding-right: 15px;
+    font-size: 40px;
+}
+
+#day {
+    background-color: rgb(190, 253, 253);
+    border-radius: 10%;
+    font-size: 50px;
+    padding: 40px;
+}
+
+
+#hoursElement {
+    background-color: rgb(190, 253, 253);
+    border-radius: 10%;
+}
+
+#minutesElement {
+    background-color: rgb(190, 253, 253);
+    border-radius: 10%;
+
+}
+
+#secondsElement {
+    background-color: rgb(190, 253, 253);
+    border-radius: 10%;
+}
