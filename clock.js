@@ -83,7 +83,10 @@ function checkAlarm() {
 
 const changeFontBtn = getElement('changeFont');
 let fontIndex = 0;
-const fonts = ['Helvetica Neue', 'Times New Roman', 'Courier New', 'Verdana'];
-changeFontBtn.addEventListener('click', () => document.body.style.fontFamily = fonts[++fontIndex % fonts.length]);
+const fonts = ['Roboto', 'Open Sans', 'Audiowide', "Anta", "Kode Mono", /* Your Google Fonts here */];
+
+changeFontBtn.addEventListener('click', () => {
+    document.body.style.fontFamily = fonts[++fontIndex % fonts.length];
+});
 
 setInterval(updateClock, 1000);
