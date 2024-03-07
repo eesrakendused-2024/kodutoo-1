@@ -65,7 +65,7 @@ let currentColor1 = '#461616';
 let currentColor2 = '#000000';
 
 window.addEventListener('keydown', changeGradient);
-window.addEventListener('click', changeColors);
+//window.addEventListener('click', changeColors);
 
 function changeGradient(e) {
     if (e.key === 'ArrowUp') {
@@ -77,7 +77,13 @@ function changeGradient(e) {
     document.body.style.background = `radial-gradient(circle, ${currentColor1} ${100 - gradientPercentage}%, ${currentColor2} ${gradientPercentage}%)`;
 }
 
-function changeColors() {
+/* function changeColors() {
+    currentColor1 = getRandomColor();
+    currentColor2 = getRandomColor();
+    document.body.style.background = `radial-gradient(circle, ${currentColor1} 80%, ${currentColor2} 20%)`;
+} */
+
+function changeBackgroundColor() {
     currentColor1 = getRandomColor();
     currentColor2 = getRandomColor();
     document.body.style.background = `radial-gradient(circle, ${currentColor1} 80%, ${currentColor2} 20%)`;
@@ -108,12 +114,10 @@ function moveClock(e) {
     clockElement.style.transform = `translateX(${clockPosition}px)`;
 }
 
-function updateTimezone() {
-    const selectedTimezone = document.getElementById('timezoneSelector').value;
-    const options = { timeZone: selectedTimezone, hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
-    const formattedTime = new Date().toLocaleTimeString('en-US', options);
-    document.getElementById('clock').innerHTML = formattedTime;
-}      
+function updateFontSize() {
+    const fontSize = document.getElementById('fontSizeSlider').value;
+    document.getElementById('clock').style.fontSize = `${fontSize}px`
+}    
 
 updateClock();
 updateDate();

@@ -34,15 +34,12 @@
             <div id="monthElement">kuu</div>
             <div id="yearElement">aasta</div>
         </div>
-
-        <div id="dropMenu">
-            <label for="timezoneSelector">Select Timezone:</label>
-            <select id="timezoneSelector" onchange="updateTimezone()">
-                <option value="America/New_York">New York</option>
-                <option value="Europe/London">London</option>
-                <option value="Asia/Tokyo">Tokyo</option>
-                <!-- Add more options for different time zones -->
-            </select>
+        <div id="sliderContainer">
+            <label for="fontSizeSlider">Muuda teksti suurust </label>
+            <input type="range" id="fontSizeSlider" min="50" max="150" step="1" value="100" oninput="updateFontSize()">
+        </div>
+        <div id="buttonContainer">Muuda tausta värvi
+            <button id="changeBackgroundColorButton" onclick="changeBackgroundColor()">CLICK</button>
         </div>
     </div>
 </body>

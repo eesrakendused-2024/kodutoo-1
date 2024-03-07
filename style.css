@@ -1,7 +1,7 @@
- html {
-    padding: 0;
+html{
     margin: 0;
- }
+    padding: 0;
+}
 
 body {
     font-family: "Anta", sans-serif;
@@ -37,7 +37,7 @@ a:hover {
 }
 
 #clock {
-    font-size: 2em;
+    font-size: 100px;
     transition: transform 0.1s ease;
 }
 
@@ -49,10 +49,43 @@ a:hover {
     padding-right: 10px;
 }
 
-#hours, #minutes, #seconds {
-    font-size: 130px;
-}
 
 #dayElement, #monthElement, #yearElement, #day {
     font-size: 25px;
 }
+
+#sliderContainer {
+    
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+
+#fontSizeSlider {
+    margin-left: 5px;
+    appearance: none;
+    height: 15px;
+    border-radius: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#fontSizeSlider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+}
+
+#fontSizeSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+  }
