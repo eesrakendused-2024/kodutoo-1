@@ -1,0 +1,142 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #0f3854;
+    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+    color: white;
+
+}
+
+.light-mode {
+    background: #95d2fa;
+    background: radial-gradient(ellipse at center, #41a8c2 0%, #ffffff 70%);
+    color: black;
+}
+
+#buttonAuthorContainer {
+    display: flex;
+    flex-direction: row;
+}
+#buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#button, #button2, #button3 {
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 5px;
+    border: 0 solid white;
+}
+#button{
+    background-color: rgb(156, 244, 252);
+}
+
+#button:hover{
+    background-color: #115072;
+    color: rgb(228, 238, 255);
+}
+
+#button2{
+    background-color: rgb(156, 252, 238);
+    margin-top: 10px;
+}
+#button2:hover{
+    background-color: #116772;
+    color: rgb(228, 238, 255);
+}
+
+#button3{
+    background-color: rgb(156, 252, 218);
+    margin-top: 10px;
+}
+#button3:hover{
+    background-color: #11726f;
+    color: rgb(228, 238, 255);
+}
+
+#clockContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dateContainer {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    letter-spacing: 0.1em;
+    font-size: 50px;
+    bottom: 500px;
+    padding-top: 50px;
+}
+
+#dateElement {
+    display: flex;
+    flex-direction: row;
+}
+
+#dateElement>div{
+    padding-right: 10px;
+}
+
+#clock {
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    letter-spacing: 0.05em;
+}
+
+
+#weekday {
+    margin-left: 95px;
+}
+
+#authorContainer {
+    width: 100%;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+}
+
+#author {
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
+
+#audio {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#audioText {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    padding-bottom: 75px;
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}

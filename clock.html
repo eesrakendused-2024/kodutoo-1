@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="clock.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kell</title>
+</head>
+<body>
+<div id="main">
+    <div id="theme">
+        <div id="buttonAuthorContainer">
+            <div id="authorContainer">
+                <div id="author">Ester Ojala</div>
+            </div>
+            <div id="buttonContainer">
+                <button id="button" onclick="toggleTheme()">Muuda teemat</button>
+                <button id="button2" onclick="changeLanguage('EST')">Eesti keel</button>
+                <button id="button3" onclick="changeLanguage('ENG')">Inglise keel</button>
+            </div>
+        </div>
+        <div id="dateContainer">
+            <div id="dateElement">
+                <div id="dayElement">kuupäev</div>
+                <div id="dot">.</div>
+                <div id="monthElement">kuu</div>
+                <div id="yearElement">aasta</div>
+            </div>
+                <div id="weekday">Tänane nädalapäev</div>
+        </div>
+        <div id="clockContainer">
+            <div id="clock">
+                <div id="hoursElement">tunnid</div>
+                <div id="minutesElement">minutid</div>
+                <div id="secondsElement">sekundid</div>
+            </div>
+        </div>
+        <div id="audioText">Parim laul:</div>
+        <div id="audio">
+            <audio controls>
+                <source src="Pärlipüüdja.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</div>
+</body>
+</html>
