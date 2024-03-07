@@ -119,6 +119,14 @@ function updateFontSize() {
     document.getElementById('clock').style.fontSize = `${fontSize}px`
 }    
 
+let isDigital = true;
+
+function toggleClockView() {
+    isDigital = !isDigital;
+    document.getElementById('digitalClock').style.display = isDigital ? 'block' : 'none';
+    document.getElementById('analogClock').style.display = isDigital ? 'none' : 'block';
+}
+
 updateClock();
 updateDate();
 setInterval(updateClock, 1000);

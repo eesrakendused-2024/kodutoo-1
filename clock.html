@@ -20,6 +20,14 @@
         <div id="authorName">Liisi Loomets</div>
         <div id="authorRepository"><a href="https://github.com/LLoomets/Eesrakendused-Kell">Repositoorium</a></div>
     </div>
+    <div id="buttonContainer">
+        <div id="backgroundColorButton">Muuda tausta värvi
+            <button id="changeBackgroundColorButton" onclick="changeBackgroundColor()">CLICK</button>
+        </div>
+        <div id="clockTypeButton">Muud kella stiili
+            <button id="changeClockTypeButton" onclick="toggleClockView()">CLICK</button>
+        </div>
+    </div>
 
     <div id="clockContainer">
         <div id="clock">
@@ -27,7 +35,9 @@
             <div id="minutes"></div>
             <div id="seconds"></div>
         </div>
-        
+        <div>
+            <div id="analogClock">Analog Clock Placeholder</div>
+        </div>
         <div id="dateElement">
             <div id="day">Tänane kuupäev</div>
             <div id="dayElement">kuupäev</div>
@@ -35,12 +45,10 @@
             <div id="yearElement">aasta</div>
         </div>
         <div id="sliderContainer">
-            <label for="fontSizeSlider">Muuda teksti suurust </label>
-            <input type="range" id="fontSizeSlider" min="50" max="150" step="1" value="100" oninput="updateFontSize()">
-        </div>
-        <div id="buttonContainer">Muuda tausta värvi
-            <button id="changeBackgroundColorButton" onclick="changeBackgroundColor()">CLICK</button>
+            <label for="fontSizeSlider">Muuda kella suurust </label>
+            <input type="range" id="fontSizeSlider" min="50" max="200" step="1" value="50" oninput="updateFontSize()">
         </div>
     </div>
+
 </body>
 </html>
