@@ -136,6 +136,7 @@ a:link, a:visited {
     text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
     text-decoration: none;
     color: white;
+    width: 150px;
 }
 .light-mode a:link, .light-mode a:visited {
     color: black;
