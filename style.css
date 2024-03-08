@@ -12,3 +12,12 @@ h1{
     font-family: Georgia, sans-serif;
     font-size: 13px;
 }
+
+a{
+    font-family: Georgia, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ 
