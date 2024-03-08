@@ -14,7 +14,7 @@ Kella saab suuremaks teha "+" klahviga ja väiksemaks "-" klahviga.
 ![image](https://github.com/esteroja/Eesrakendused_kodutoo-1/assets/146342718/524beae2-bd40-4b08-b815-e37c3ede764c)
 ## 3. Keele muutmine
 Algselt on leht eesti keeles. Klõpsates nupul "Inglise keel" muutub tekst inglisekeelseks. Klõpsates nupul "Eesti keel" muutub tekst eestikeelseks.
-![image](https://github.com/esteroja/Eesrakendused_kodutoo-1/assets/146342718/118837d6-6a53-4898-bb8b-274e841af515)
+![image](https://github.com/esteroja/Eesrakendused_kodutoo-1/assets/146342718/ba713824-31de-4231-88aa-ce3b57978d97)
 ## 4. Muusika
 Klõpsates lehe all ääres pleieril ▶ ikoonil hakkab mängima autori lemmik laul "Pärlipüüdja".
 ## 5. Päikse ja kuu ikoonid
