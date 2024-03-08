@@ -22,6 +22,7 @@ On ära määratud, et lehe vasakul servas on päikse ikoon kell 6:00-17:59. Pä
 Lehekülg kuvab Seouli ja Los Angelese kellasid ja need tiksuvad paralleelselt eesti ajaga.
 ## Kasutatud allikad ja funktsioonid
 Inspiratsioon kujunduseks: https://codepen.io/gau/pen/LjQwGp
+<br>
 Kuu pilt: https://pngtree.com/freepng/warm-color-mid-autumn-festival-moon-cartoon-moon-jade-rabbit_3793234.html
 Päikse pilt: https://www.pinclipart.com/downpngs/iTbmmJh_sun-clip-art-transparent-background-sun-clipart-png/
 Välismaa kellaja funktsioon: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString
