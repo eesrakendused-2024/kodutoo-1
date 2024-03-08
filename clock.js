@@ -51,6 +51,16 @@ function updateClock() {
     document.getElementById('hoursel').innerHTML=hours;
     document.getElementById('minutesel').innerHTML=":"+minutes;
     document.getElementById('secondsel').innerHTML=":"+seconds;
+
+    var catImage = document.querySelector("#pics img");
+    if (hours >= 14 || hours < 10) 
+    {
+        catImage.src = "catnight.png"; // Change image source for night
+    } 
+    else 
+    {
+        catImage.src = "catday.png"; // Change image source for day
+    }
 }
 function updateDate()
 {
