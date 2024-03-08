@@ -1,22 +1,20 @@
 let hours, minutes, seconds, date, day, month, year, dayValue;
 let months = ["Jaanuar", "Veebruar", "Märts"];
 let days = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
-window.addEventListener('keypress', textSize);
-let timeFontSize = 3;
+
+let timeFontSize = 7;
 document.getElementById('clock').style.fontSize = timeFontSize + "em";
 
-function textSize(e) {
-    console.log(e.keyCode);
-    if (e.keyCode == 45) {
-        timeFontSize = timeFontSize - 0.1;
-        document.getElementById('clock').style.fontSize = timeFontSize + "em";
-    }
-    if (e.keyCode == 43) {
-        timeFontSize = timeFontSize + 0.1;
-        document.getElementById('clock').style.fontSize = timeFontSize + "em";
-    }
-}
 
+let clockPosition = 0;
+window.addEventListener('keydown', moveClock);
+
+let gradientPercentage = 80;
+let currentColor1 = '#461616';
+let currentColor2 = '#000000';
+window.addEventListener('keydown', changeGradient);
+
+let selectedTimezone = 'Europe/Tallinn'; 
 
 function updateClock() {
     date = new Date();
@@ -60,48 +58,13 @@ function updateDate() {
 
 }
 
-let gradientPercentage = 80;
-let currentColor1 = '#461616';
-let currentColor2 = '#000000';
+// Muuda kella suurust (slider/range)
+function updateFontSize() {
+    const fontSize = document.getElementById('fontSizeSlider').value;
+    document.getElementById('clock').style.fontSize = `${fontSize}em`
+}  
 
-window.addEventListener('keydown', changeGradient);
-//window.addEventListener('click', changeColors);
-
-function changeGradient(e) {
-    if (e.key === 'ArrowUp') {
-        gradientPercentage = Math.min(gradientPercentage + 3, 100);
-    } else if (e.key === 'ArrowDown') {
-        gradientPercentage = Math.max(gradientPercentage - 3, 0);
-    }
-
-    document.body.style.background = `radial-gradient(circle, ${currentColor1} ${100 - gradientPercentage}%, ${currentColor2} ${gradientPercentage}%)`;
-}
-
-/* function changeColors() {
-    currentColor1 = getRandomColor();
-    currentColor2 = getRandomColor();
-    document.body.style.background = `radial-gradient(circle, ${currentColor1} 80%, ${currentColor2} 20%)`;
-} */
-
-function changeBackgroundColor() {
-    currentColor1 = getRandomColor();
-    currentColor2 = getRandomColor();
-    document.body.style.background = `radial-gradient(circle, ${currentColor1} 80%, ${currentColor2} 20%)`;
-}
-
-function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
-let clockPosition = 0;
-
-window.addEventListener('keydown', moveClock);
-
+// Liiguta kella nooltega vasakule paremale
 function moveClock(e) {
     const clockElement = document.getElementById('clock');
 
@@ -114,18 +77,42 @@ function moveClock(e) {
     clockElement.style.transform = `translateX(${clockPosition}px)`;
 }
 
-function updateFontSize() {
-    const fontSize = document.getElementById('fontSizeSlider').value;
-    document.getElementById('clock').style.fontSize = `${fontSize}px`
-}    
-
-let isDigital = true;
-
-function toggleClockView() {
-    isDigital = !isDigital;
-    document.getElementById('digitalClock').style.display = isDigital ? 'block' : 'none';
-    document.getElementById('analogClock').style.display = isDigital ? 'none' : 'block';
+// Muuda taustavärvi
+function changeBackgroundColor() {
+    currentColor1 = getRandomColor();
+    currentColor2 = getRandomColor();
+    document.body.style.background = `radial-gradient(circle, ${currentColor1} 80%, ${currentColor2} 20%)`;
 }
+
+// Random värv
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+// Muuda tausta gradienti nooltega
+function changeGradient(e) {
+    if (e.key === 'ArrowUp') {
+        gradientPercentage = Math.min(gradientPercentage + 3, 100);
+    } else if (e.key === 'ArrowDown') {
+        gradientPercentage = Math.max(gradientPercentage - 3, 0);
+    }
+
+    document.body.style.background = `radial-gradient(circle, ${currentColor1} ${100 - gradientPercentage}%, ${currentColor2} ${gradientPercentage}%)`;
+}
+
+// Muuda ajavööndi
+function changeTimezone() {
+    const selectedTimezone = document.getElementById('timezoneSelect').value;
+    const options = { timeZone: selectedTimezone, hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
+    const formattedTime = new Date().toLocaleTimeString('en-US', options);
+    document.getElementById('clock').innerHTML = formattedTime;
+}
+
 
 updateClock();
 updateDate();

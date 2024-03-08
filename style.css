@@ -1,4 +1,9 @@
-html{
+:root {
+    --darkRed: rgb(70, 22, 22);
+    --lightRed: rgb(255, 120, 120);
+}
+
+*{
     margin: 0;
     padding: 0;
 }
@@ -6,7 +11,7 @@ html{
 body {
     font-family: "Anta", sans-serif;
     color: white;
-    background: radial-gradient(#461616 20%, #000000 80%);
+    background: radial-gradient(var(--darkRed) 20%, black 80%);
 }
 
 a {
@@ -19,14 +24,37 @@ a:hover {
     color: red;
 }
 
-#authorContainer {
+#topContainer {
     display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
 }
 
-#authorName, #authorRepository{
-    margin: 5px;
+#backgroundColorButton {
+    margin-left: auto;
+    margin-right: 15px;
 }
 
+#authorRepository{
+    margin-left: 10px;
+}
+
+#changeBackgroundColorButton {
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-family: "Anta", sans-serif;
+    font-size: 16px;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+}
+
+#changeBackgroundColorButton:hover {
+    background-color: black;
+    color: white;
+}
 
 #clockContainer {
     display: flex;
@@ -37,7 +65,6 @@ a:hover {
 }
 
 #clock {
-    font-size: 50px;
     transition: transform 0.1s ease;
 }
 
@@ -56,8 +83,6 @@ a:hover {
 
 #sliderContainer {
     margin-top: 5px;
-    display: flex;
-    align-items: center;
 }
 
 #fontSizeSlider {
@@ -68,8 +93,8 @@ a:hover {
     background: #d3d3d3;
     outline: none;
     opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 #fontSizeSlider::-webkit-slider-thumb {
@@ -77,7 +102,7 @@ a:hover {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: red;
+    background: var(--lightRed);
     cursor: pointer;
 }
 
@@ -85,36 +110,55 @@ a:hover {
     opacity: 1;
 }
 
-#buttonContainer {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    margin: 5px;
-    font-size: 18px;
-}
-#changeBackgroundColorButton {
-    margin-bottom: 5px;
+#audioContainer {
+    display: flex;
+    justify-content: center;
 }
 
-#changeBackgroundColorButton, #changeClockTypeButton {
-    background-color: white;
+audio {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+audio:hover {
+    opacity: 1;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgba(255, 0, 0, 0.26);
+}
+
+audio::-webkit-media-controls-mute-button, audio::-webkit-media-controls-play-button {
+    background-color: var(--lightRed);
+    border-radius: 50%;
+  }
+
+audio::-webkit-media-controls-timeline {
+    background-color: var(--lightRed);
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: var(--lightRed);
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#timezoneContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#timezoneSelect {
+    margin-left: 10px;
+    background-color: var(--darkRed);
+    color: white;
     border: 2px solid red;
     border-radius: 10px;
-    font-family: "Anta", sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#changeBackgroundColorButton:hover, #changeClockTypeButton:hover {
-    background-color: black;
-    color: white;
-}
-
-#digitalClock, #analogClock {
-    font-size: 60px;
-    transition: font-size 0.3s ease-in-out;
-}
-
-#analogClock {
-    display: none; /* Initially hide the analog clock */
+    width: 100px;
 }
