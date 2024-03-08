@@ -1,5 +1,7 @@
 ## Autor
-Ester Ojala. Lin2 link: https://www.tlu.ee/~esteroja/Eesrakendused/ER_kell/clock.html
+Ester Ojala
+<br>
+https://www.tlu.ee/~esteroja/Eesrakendused/ER_kell/clock.html
 ## Rakenduse avapilt
 Cyberpunk stiilis digitaalne kell.
 ![image](https://github.com/esteroja/Eesrakendused_kodutoo-1/assets/146342718/14819fd3-a400-4c58-8afe-50cdca509038)
@@ -24,8 +26,13 @@ Lehekülg kuvab Seouli ja Los Angelese kellasid ja need tiksuvad paralleelselt e
 Inspiratsioon kujunduseks: https://codepen.io/gau/pen/LjQwGp
 <br>
 Kuu pilt: https://pngtree.com/freepng/warm-color-mid-autumn-festival-moon-cartoon-moon-jade-rabbit_3793234.html
+<br>
 Päikse pilt: https://www.pinclipart.com/downpngs/iTbmmJh_sun-clip-art-transparent-background-sun-clipart-png/
+<br>
 Välismaa kellaja funktsioon: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString
+<br>
 Välismaa kuupäeva funktsioon: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString 
+<br>
 CSS: https://www.w3schools.com/css/default.asp 
+<br>
 Teema vahetus: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
