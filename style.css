@@ -69,9 +69,25 @@
     /*object-fit: cover;*/
 }
 
-html, body {
+/*html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+}*/
+
+/*.border #border
+{
+    position: relative;
+    border: 50px;
+    border-image-source: url("border.png");
+    border-image-slice: 20 20 20 20;
+    border-image-repeat: round;
+}*/
+
+body {
+    border-bottom: 130px solid transparent; /* Set a thick transparent border */
+    border-image: url('border.png') 30 round; /* Set the border image */
+    /*padding: 20px; /* Add padding inside the border */
+    box-sizing: border-box; /* Include border and padding in the element's total width and height */
 }
