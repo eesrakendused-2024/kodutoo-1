@@ -1,28 +1,19 @@
 let hours, minutes, seconds, date, day, month, year, dayValue;
-let months = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli", "august", "september", "oktoober", "november", "detsember"];
-let days = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
-let monthsENG = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
-let daysENG = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-//let monthENG, dayENG;
+let months = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni",
+    "juuli", "august", "september", "oktoober", "november", "detsember"];
+let days = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev",
+    "Neljapäev", "Reede", "Laupäev"];
+let monthsENG = ["january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december"];
+let daysENG = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
+    "Friday", "Saturday", "Sunday"];
+let monthENG, dayENG, timeKR, timeLA, dateKR, dateLA;
 
-let timeFontSize = 10;
+let timeFontSize = 7;
 document.getElementById('clock').style.fontSize = timeFontSize + "em";
 window.addEventListener('keypress', textSize);
 
-document.getElementById('theme');
-
-/*let button = document.getElementById('button');
-let monthElement = document.getElementById('monthElement');
-let day = document.getElementById('day');
-let audioText = document.getElementById('audioText');
-
-//window.addEventListener('click', changeLanguage);
-let button2 = document.getElementById('button2');
-let english = false;*/
-
-let button2 = document.getElementById('button2');
-let button3 = document.getElementById('button3');
-function textSize(e){ //e - võtab vastu eventlisteneri
+function textSize(e){
     if (e.key == "-"){
         console.log(timeFontSize);
         timeFontSize = timeFontSize - 0.1;
@@ -37,6 +28,7 @@ function textSize(e){ //e - võtab vastu eventlisteneri
 function updateClock(){
     date = new Date();
     hours = date.getHours();
+    console.log(hours);
     minutes = date.getMinutes();
     seconds = date.getSeconds();
     if (hours < 10){
@@ -51,6 +43,13 @@ function updateClock(){
     document.getElementById('hoursElement').innerHTML = hours;
     document.getElementById('minutesElement').innerHTML = ":" + minutes;
     document.getElementById('secondsElement').innerHTML = ":" + seconds;
+
+    timeKR = date.toLocaleTimeString('en-GB', {timeZone: 'Asia/Seoul'});
+    timeLA = date.toLocaleTimeString('en-GB', {timeZone: 'America/Los_Angeles'});
+
+    document.getElementById('timeKR').innerHTML = timeKR;
+    document.getElementById('timeLA').innerHTML = timeLA;
+
 }
 
 function updateDate(){
@@ -69,59 +68,48 @@ function updateDate(){
     monthENG = monthsENG[month];
     dayENG = daysENG[dayValue];
 
+    dateKR = date.toLocaleDateString('en-GB', {timeZone: 'Asia/Seoul'});
+    dateLA = date.toLocaleDateString('en-GB', {timeZone: 'America/Los_Angeles'});
 
+    document.getElementById('dateKR').innerHTML = dateKR;
+    document.getElementById('dateLA').innerHTML = dateLA;
 }
 
-function toggleTheme() {
-    document.querySelector('body').classList.toggle('light-mode');
-}
+button2.addEventListener('click', function() {
+    button.innerHTML = 'Muuda teemat';
+    button2.innerHTML = 'Eesti keel';
+    button3.innerHTML = 'Inglise keel';
+    monthElement.innerHTML = months[month];
+    weekday.innerHTML = days[dayValue];
+    audioText.innerHTML = 'Parim laul:';
+    repo.innerHTML = '<a href="https://github.com/esteroja/kodutoo-1" ' +
+        'target="_blank">Repositoorium</a>';
+});
 
-function changeLanguage(language){
-    if (language == 'EST') {
-        button.innerHTML = 'Muuda teemat';
-        button2.innerHTML = 'Eesti keel';
-        button3.innerHTML = 'Inglise keel';
-        monthElement.innerHTML = months[month];
-        weekday.innerHTML = days[dayValue];
-        audioText.innerHTML = 'Parim laul:';
-    } else if (language == 'ENG') {
+button3.addEventListener('click', function(){
         button.innerHTML = 'Change theme';
         button2.innerHTML = 'Estonian';
         button3.innerHTML = 'English';
         monthElement.innerHTML = monthENG;
         weekday.innerHTML = dayENG;
-        console.log(weekday.innerHTML = dayENG);
         audioText.innerHTML = 'Best song:';
-    }
-}
-/*function changeLanguage(){
-    console.log('funktsiooni algus, english =', english)
-    if (english === false) {
-        button.innerHTML = 'Change theme';
-        button2.innerHTML = 'Change language';
-        monthElement.innerHTML = monthENG;
-        day.innerHTML = dayENG;
-        audioText.innerHTML = 'Best song:';
-        english = true;
+        repo.innerHTML = '<a href="https://github.com/esteroja/kodutoo-1" ' +
+            'target="_blank">Repository</a>';
+});
 
+function changeIcon(){
+    if (hours >= 6 && hours < 18){
+        document.getElementById('icon').src = "sun.png";
     } else {
-        button.innerHTML = 'Muuda teemat';
-        button2.innerHTML = 'Muuda keelt';
-        monthElement.innerHTML = months[month];
-        day.innerHTML = days[dayValue];
-        audioText.innerHTML = 'Best song:';
-        english = false;
-        /!*button.textContent = 'Muuda teemat';
-        button2.textContent = 'Muuda keelt';
-        monthElement.textContent = months[month];
-        day.textContent = days[dayValue];
-        audioText.textContent = 'Parim laul:'*!/
+        document.getElementById('icon').src = "moon.png";
     }
 }
 
-button2.addEventListener('click', changeLanguage);*/
+document.getElementById('theme');
 
-
+function toggleTheme() {
+    document.querySelector('body').classList.toggle('light-mode');
+}
 function changeBackgroundColor(){
     const searchParams = new URLSearchParams(window.location.search);
     if (searchParams.has("theme")){
@@ -134,4 +122,4 @@ updateClock();
 updateDate();
 setInterval(updateClock, 1000);
 changeBackgroundColor();
-//changeLanguage();
+changeIcon();
