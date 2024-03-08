@@ -11,7 +11,7 @@ Klõpsates nupul "Muuda teemat" muutub taust heledaks ja tekst tumedaks ehk saad
 Kella saab suuremaks teha "+" klahviga ja väiksemaks "-" klahviga.
 ![image](https://github.com/esteroja/Eesrakendused_kodutoo-1/assets/146342718/524beae2-bd40-4b08-b815-e37c3ede764c)
 # 3. Keele muutmine
-Algselt on leht eesti keeles. Klõpsates nupul "Inglise keel" muutub tekst inglisekeelseks. Klõpsates nupul "Eesti keel" muutub keel eestikeelseks.
+Algselt on leht eesti keeles. Klõpsates nupul "Inglise keel" muutub tekst inglisekeelseks. Klõpsates nupul "Eesti keel" muutub tekst eestikeelseks.
 ![image](https://github.com/esteroja/Eesrakendused_kodutoo-1/assets/146342718/118837d6-6a53-4898-bb8b-274e841af515)
 # 4. Muusika
 Klõpsates lehe all ääres pleieril ▶ ikoonil hakkab mängima autori lemmik laul "Pärlipüüdja".
