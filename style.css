@@ -1,0 +1,47 @@
+#clock, #dateElement, #day{
+    display: flex;
+}
+
+#hoursel{
+    background-color: aqua;
+}
+
+#minutesel{
+    background-color: aquamarine;
+}
+
+#secondsel{
+    background-color: rgb(233, 255, 93);
+}
+
+#dateElement>div{
+    padding-right: 10px;
+}
+
+#clockCont {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 241, 147);
+    border-style:dashed;
+    border-color: rgb(90, 193, 106);
+    border-width: 10px;
+    width: max-content;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#clock {
+    font-size: 3em;
+}
+
+#dateElement {
+    font-size: 3em;
+}
