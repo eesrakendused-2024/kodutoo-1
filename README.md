@@ -1,6 +1,5 @@
 ## Autor
-Ester Ojala
-Lin2 link: https://www.tlu.ee/~esteroja/Eesrakendused/ER_kell/clock.html
+Ester Ojala. Lin2 link: https://www.tlu.ee/~esteroja/Eesrakendused/ER_kell/clock.html
 ## Rakenduse avapilt
 Cyberpunk stiilis digitaalne kell.
 ![image](https://github.com/esteroja/Eesrakendused_kodutoo-1/assets/146342718/14819fd3-a400-4c58-8afe-50cdca509038)
