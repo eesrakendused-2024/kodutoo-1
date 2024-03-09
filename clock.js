@@ -8,6 +8,7 @@ let dateFontSize=2;
 let dayFontSize=2;
 var catSound = document.getElementById("catSound");
 var catImage = document.getElementById("cat");
+let dynamicBgColor = true;
 document.getElementById("clock").style.fontSize=timeFontSize+"em";
 document.getElementById("dateElement").style.fontSize=dateFontSize+"em";
 document.getElementById("day").style.fontSize=dayFontSize+"em";
@@ -33,40 +34,43 @@ function textSize(e) {
 }
 
 function updateClock() {
-    date=new Date();
-    //console.log(date);
-    hours=date.getHours();
-    minutes=date.getMinutes();
-    seconds=date.getSeconds();
-    //console.log(hours, minutes, seconds);
-    if (hours<10)
-    {
-        hours="0"+hours;
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+
+    if (hours < 10) {
+        hours = "0" + hours;
     }
-    if (minutes<10)
-    {
-        minutes="0"+minutes;
+    if (minutes < 10) {
+        minutes = "0" + minutes;
     }
-    if (seconds<10)
-    {
-        seconds="0"+seconds;
+    if (seconds < 10) {
+        seconds = "0" + seconds;
     }
-    document.getElementById('hoursel').innerHTML=hours;
-    document.getElementById('minutesel').innerHTML=":"+minutes;
-    document.getElementById('secondsel').innerHTML=":"+seconds;
+
+    document.getElementById('hoursel').innerHTML = hours;
+    document.getElementById('minutesel').innerHTML = ":" + minutes;
+    document.getElementById('secondsel').innerHTML = ":" + seconds;
 
     var catImage = document.querySelector("#cat img");
     var bgImage = document.querySelector("#bg img");
-    if (hours >= 14 || hours < 10) 
-    {
+    var bgColor = "red";
+
+    if (hours >= 20 || hours < 10) {
         bgImage.src = "taustnight.png";
         catImage.src = "catnight.png";
-    } 
-    else 
-    {
+        bgColor = "darkblue";
+    } else {
         bgImage.src = "taustday.png";
         catImage.src = "catday.png";
+        bgColor = "orange";
     }
+
+    if (dynamicBgColor) { 
+        document.body.style.backgroundColor = bgColor;
+    }
+
 }
 function updateDate()
 {
@@ -99,24 +103,20 @@ function changeClockColor()
     clockCont.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
 }
 
-changeClockColor();
+document.body.style.height = "100vh";
+document.body.style.width = "100vw";
+//document.body.style.backgroundColor = bgColor; 
 
-document.body.style.height = "100vh"; // Set height to 100% of viewport height
-document.body.style.width = "100vw"; // Set width to 100% of viewport width
-document.body.style.backgroundColor = "orange"; // Set initial background color to white
-
-// Define the function to change the color of the entire page
-function changeBgColor() 
-{
+function changeBgColor() {
     var r = Math.round(Math.random() * 255);
     var g = Math.round(Math.random() * 255);
     var b = Math.round(Math.random() * 255);
 
     document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+    dynamicBgColor = false;
 }
 
 clockCont.addEventListener('click',changeClockColor);
-
 document.body.addEventListener('click',changeBgColor);
 
 setInterval(updateClock, 1000);
