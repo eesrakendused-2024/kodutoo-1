@@ -1,0 +1,139 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #081C29;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#topBar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#nameSection, #repoSection {
+    margin: 0;
+    padding: 0;
+}
+
+#repoSection a {
+    color: white;
+    text-decoration: none;
+}
+
+#repoSection a:hover {
+    text-decoration: underline;
+}
+
+#clockContainer{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: #333;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, 0%);
+}
+
+#clock, #dateElement{
+    display: flex;
+    color: white;
+}
+
+#dateElement>div{
+    padding-right: 10px;
+}
+
+#day{
+    color:white;
+}
+
+#settingsContainer {
+    width: 20%;
+    height: 35%;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    position: relative;
+    top:-25%;
+}
+
+#textColorContainer, #backgroundColorContainer, #borderColorContainer{
+    display: flex;
+    align-items: center;
+}
+
+.addMargin{
+    margin-right: .5%;
+}
+
+#colorContainer{
+    width: 75%;
+    height: 75%;
+    position: relative;
+    left:50%;
+    transform: translate(-50%, -0%);
+}
+
+#timezoneContainer{
+    width: 15%;
+    height: 5%;
+    position: relative;
+    left:2.5%;
+    top:-20%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+}
+
+#fontContainer{
+    width: 15%;
+    height: 5%;
+    position: relative;
+    left:2.5%;
+    top:-19%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+}
+
+#clockSettings{
+    width: 85%;
+    position: relative;
+    left:50%;
+    transform: translate(-50%, 0%);
+    font-weight: bold;
+    font-size: 200%;
+    
+}
+
+#dragText{
+    width: 75%;
+    height: 20%;
+    position: relative;
+    left:50%;
+    top:1%;
+    transform: translate(-50%, 0%);
+    font-size: 100%;
+}
+

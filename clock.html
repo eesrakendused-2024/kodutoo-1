@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/clock.js" defer></script>
+    <script src="scripts/background.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/analog-clock.css">
+    <title>Kell</title>
+</head>
+<body>
+    <div id="topBar">
+        <div id="nameSection">
+            <span>Henri Rihard Pallas</span>
+        </div>
+        <div id="repoSection">
+            <a href="https://github.com/yourusername/your-repository" target="_blank">Repository</a>
+        </div>
+    </div>
+
+    <div id="analogClockContainer">
+        <div id="analogClock">
+            <div id="hourHand" class="hand hour"></div>
+            <div id="minuteHand" class="hand minute"></div>
+            <div id="secondHand" class="hand second"></div>
+            <div id="centerDot"></div>
+        </div>
+    </div>
+
+    <div id="clockContainer" class="draggable">
+        <div id="clock">
+            <div id="hoursElement" class="changeTextColor changeFont">tunnid</div>
+            <div id="minutesElement" class="changeTextColor changeFont">minutid</div>
+            <div id="secondsElement" class="changeTextColor changeFont">sekundid</div>
+        </div>
+        <div id="dateElement">
+            <div id="dayElement" class="changeTextColor changeFont">kuupäev</div>
+            <div id="monthElement" class="changeTextColor changeFont">kuu</div>
+            <div id="yearElement" class="changeTextColor changeFont">aasta</div>
+        </div>
+        <div id="day" class="changeTextColor changeFont">Tänane nädalapäev</div>
+    </div>
+
+    <div id="settingsContainer" class="draggable">
+
+        <div id="colorContainer">
+            <div id="clockSettings">Clock colors</div>
+            <div id="textColorContainer">
+                <p class="addMargin">Text color</p>
+                <input type="color" name="textColor" id="textColor"><br>
+            </div>
+            <div id="backgroundColorContainer">
+                <p class="addMargin">Background color</p>
+                <input type="color" name="backgroundColor" id="backColor"><br>
+            </div>
+            <div id="borderColorContainer">
+                <p class="addMargin">Border color</p>
+                <input type="color" name="borderColor" id="borderColor"> 
+            </div>
+        </div>
+        <div id="dragText">Drag clocks by clicking and holding.</div>
+    </div>
+
+    <div id="timezoneContainer">
+        <label for="timezoneSelector">Select timezone:</label>
+        <select id="timezoneSelector">
+            <option value="system" selected>System Time</option>
+            <option value="-12">GMT-12</option>
+            <option value="-11">GMT-11</option>
+            <option value="-10">GMT-10</option>
+            <option value="-9">GMT-9</option>
+            <option value="-8">GMT-8</option>
+            <option value="-7">GMT-7</option>
+            <option value="-6">GMT-6</option>
+            <option value="-5">GMT-5</option>
+            <option value="-4">GMT-4</option>
+            <option value="-3">GMT-3</option>
+            <option value="-2">GMT-2</option>
+            <option value="-1">GMT-1</option>
+            <option value="0">GMT</option>
+            <option value="1">GMT+1</option>
+            <option value="2">GMT+2</option>
+            <option value="3">GMT+3</option>
+            <option value="4">GMT+4</option>
+            <option value="5">GMT+5</option>
+            <option value="6">GMT+6</option>
+            <option value="7">GMT+7</option>
+            <option value="8">GMT+8</option>
+            <option value="9">GMT+9</option>
+            <option value="10">GMT+10</option>
+            <option value="11">GMT+11</option>
+            <option value="12">GMT+12</option>
+            <option value="13">GMT+13</option>
+            <option value="14">GMT+14</option>
+        </select>
+    </div>
+
+    <div id="fontContainer">
+        <label for="fontSelector">Select font:
+            <select id="fontSelector">
+                <option value="Times New Roman, serif">Times New Roman</option>
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="Courier New, monospace">Courier New</option>
+                <option value="Georgia, serif">Georgia</option>
+            </select>
+        </label>
+    </div>
+</body>
+</html>
+
+
