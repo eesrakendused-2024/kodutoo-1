@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anta">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kode+Mono">
+    <link rel="stylesheet" href="style.css">
+    <script src="clock.js" defer></script>
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div id="clock-box">
+        <div id="element1">
+            <div id="clockElement"></div>
+            <div id="alarmDisplay"></div>
+        </div>
+        <div id="element2">
+            <div id="dateElement"></div>
+        </div>
+        <div id="element3">
+            <div id="buttonSection">
+                <button id="backgroundElement">Display Color</button>
+                <button id="changeFont">Change Font</button>
+                <button id="digitsElement">Number Color</button>
+            </div>
+            <div id="alarmSection">
+                <button id="setAlarmBtn">Set Alarm</button>
+                <input type="number" id="hourInput" min="0" max="23" placeholder="HH">
+                <span>:</span>
+                <input type="number" id="minuteInput" min="0" max="59" placeholder="MM">
+                <button id="clearAlarmBtn">Clear Alarm</button>
+            </div>
+        </div>
+    </div>
+    <div class="info" id="author">Author: Taavi Vendt</div>
+    <div class="info" id="repo">https://github.com/tv911473/kodutoo-1.git</div>
+</body>
+</html>
