@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="clock.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kell</title>
+</head>
+<body>
+<div id="main">
+    <div id="theme">
+        <div id="buttonAuthorContainer">
+            <div id="authorContainer">
+                <div id="author">Ester Ojala</div>
+                <div id="repo">
+                    <a href="https://github.com/esteroja/kodutoo-1" target="_blank">Repositoorium</a>
+                </div>
+            </div>
+            <div id="buttonContainer">
+                <button id="button" onclick="toggleTheme()">Muuda teemat</button>
+                <button id="button2">Eesti keel</button>
+                <button id="button3">Inglise keel</button>
+            </div>
+        </div>
+        <div id="dateContainer">
+            <div id="dateElement">
+                <div id="dayElement">kuupäev</div>
+                <div id="dot">.</div>
+                <div id="monthElement">kuu</div>
+                <div id="yearElement">aasta</div>
+            </div>
+                <div id="weekday">Tänane nädalapäev</div>
+        </div>
+        <div id="clockContainer">
+            <div id="clock">
+                <div id="hoursElement">tunnid</div>
+                <div id="minutesElement">minutid</div>
+                <div id="secondsElement">sekundid</div>
+            </div>
+        </div>
+        <div id="iconDateContainer">
+            <div id="iconContainer">
+                <img id="icon" src="" alt="icon">
+            </div>
+            <div id="clockContainer2">
+                <div id="clock2">
+                    <div id="timeTextKR">Seoul: </div>
+                    <div id="timeKR">kell Koreas</div>
+                    <div id="dateKR">kuupäev Koreas</div>
+                </div>
+
+                <div id="clock3">
+                    <div id="timeTextLA">Los Angeles: </div>
+                    <div id="timeLA">kell Los Angeleses</div>
+                    <div id="dateLA">kuupäev Los Angeleses</div>
+                </div>
+            </div>
+        </div>
+        <div id="audioText">Parim laul:</div>
+        <div id="audio">
+            <audio controls>
+                <source src="Pärlipüüdja.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</div>
+</body>
+</html>

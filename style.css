@@ -1,0 +1,187 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #0f3854;
+    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+    color: white;
+}
+
+.light-mode {
+    background: radial-gradient(ellipse at center, #41a8c2 0%, #ffffff 70%);
+    color: black;
+}
+
+#buttonAuthorContainer {
+    display: flex;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#button, #button2, #button3 {
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 5px;
+    border: 0 solid white;
+}
+
+#button{
+    background-color: rgb(156, 244, 252);
+}
+
+#button:hover{
+    background-color: #115072;
+    color: rgb(228, 238, 255);
+}
+
+#button2{
+    background-color: rgb(156, 252, 238);
+    margin-top: 10px;
+}
+#button2:hover{
+    background-color: #147485;
+    color: rgb(228, 238, 255);
+}
+
+#button3{
+    background-color: rgb(156, 252, 218);
+    margin-top: 10px;
+}
+
+#button3:hover{
+    background-color: #11726f;
+    color: rgb(228, 238, 255);
+}
+
+#clockContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#clockContainer2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+#clock, #clock2, #clock3 {
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    letter-spacing: 0.05em;
+}
+
+#clock2, #clock3 {
+    font-size: 40px;
+    align-self: flex-start;
+}
+
+#clock2>div, #clock3>div {
+    padding-right: 13px;
+    margin-bottom: 15px;
+}
+
+#dateContainer {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    letter-spacing: 0.1em;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+#dateElement {
+    display: flex;
+    flex-direction: row;
+}
+
+#dateElement>div{
+    padding-right: 10px;
+}
+
+#weekday {
+    margin-left: 95px;
+}
+
+#authorContainer, #repo {
+    width: 100%;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
+
+a:link, a:visited {
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    text-decoration: none;
+    color: white;
+    width: 150px;
+}
+.light-mode a:link, .light-mode a:visited {
+    color: black;
+}
+a:hover {
+    color:rgb(10, 182, 194);
+    text-decoration: none;
+}
+.light-mode a:link:hover, .light-mode a:visited:hover {
+    color:rgb(10, 182, 194);
+    text-decoration: none;;
+}
+
+#iconDateContainer{
+    display: flex;
+}
+
+#iconContainer{
+    width: 100%;
+}
+
+#icon {
+    width: 200px;
+    height: 200px;
+}
+
+#audio {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#audioText {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    padding-bottom: 75px;
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    margin: 0;
+}
