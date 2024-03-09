@@ -1,3 +1,25 @@
+# Kell
+Autor: Henri Rihard Pallas
+Ekraanipilt: 
+
+# Funktsioonid:
+
+Digitaalne kell:
+1. Muuda digitaalse kella numbrite ja teksti värvi.
+2. Muuda digitaalse kella taustavärvi.
+3. Muuda digitaalse kella ääristevärvi.
+4. Liiguta digitaalset kella sellele klõpsates ning liigutades.
+5. Muuda kella ajavööndit, veebilehe avamisel kasutab kell süsteemi aega.
+6. Muuda kella teksti ja numbrite fonti.
+
+Taustapilt:
+1. Muutub kas heledamaks või tumedamaks, sõltuvalt kellaajast.
+
+# Ekraanipilt:
+
+![](media/screenshot.png)
+
+
 # kodutoo-1
 Esimene kodutöö
 
