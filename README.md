@@ -27,6 +27,6 @@ Arial, Times New Roman ja Segoe UI nupud muudavad kella teksti fonti
 Vajutades Play peale hakkab mängima tuule müra, mille olen ise salvestanud ning mida saab ka pausile panna.
 
 
-Saab siin katsetada http://greeny.cs.tlu.ee/~krisarv/eesrakendused/clock/clock.html
+Saab siin katsetada http://greeny.cs.tlu.ee/~krisarv/eesrakendused/clock/clock.html (ühendust vaja)
 
 Vestluse link: https://chat.openai.com/share/e7bf9308-a683-4a08-ab43-2a2bee83226b
