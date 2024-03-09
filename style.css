@@ -1,0 +1,83 @@
+body {
+  font-family: Georgia, sans-serif;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+#name {
+  color: blanchedalmond;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+  font-size: 1.2em;
+}
+
+#github-link {
+  color: blanchedalmond;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.2em;
+}
+
+#clock-container {
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#menu {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+#time {
+  color: rgb(255, 255, 255);
+  font-size: 4em; 
+  transition: font-size 0.3s ease; 
+}
+
+#date {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  transition: font-size 0.3s ease;
+}
+
+#time:hover {
+  font-size: 5em;
+}
+
+#date:hover {
+  font-size: 4em;
+}
+
+audio {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#dimmer-slider {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+#slider {
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+}
