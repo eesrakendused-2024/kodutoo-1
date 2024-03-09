@@ -1,3 +1,12 @@
+# Kodutöö 1
+Töö autor: Karmen Klaasen
+
+![image](https://github.com/kklaasen1/kodutoo-1/assets/146342698/55c2cebe-f023-4c63-859f-1e162288f46c)
+
+### Funktsionaalsuse kirjeldus
+
+Veebirakendus näitab vaikimisi kellaaega. Iga minuti tagant vahetub kellaaeg kõigepealt kuupäevaks ja seejärel kellaajaks koos kuupäevaga ning siis algab tsükkel uuesti. Sama vahetust saab teha ka kella ja kuupäeva peale klikkides (esimesel korral peab kaks korda klikkima, et vahetus toimiks). Lehe all ääres on nupud, millega saab kella atribuute muuta. Esimene ehk 'Clock Format' muudab kella formaati 24 tunni pealt 12 tunnisele formaadile ja tagasi. Teine ehk 'Seconds On/Off' laseb valida, kas kell kuvatakse sekunditega või ilma. Kolmas ehk 'Background Color' laseb lehe taustavärvi muuta. Neljas ehk 'Date Language' laseb valida kuupäeva kuvamisel kasutatud keelt eesti ja inglise vahel. Kella ja kuupäeva suurust saab muuta kasutades klaviatuuril alla ja üles nooli. Üles noolega saab muuta suurust suuremaks ja alla noolega väiksemaks. Nii maksimum kui miinimum suurus on paika pandud. Lehe üleval paremal nurgas on nupp 'Light/Dark Mode', millega saab valida heleda ja tumeda värvistiili vahel. Kui enne vahetada taustavärvi ja seejärel Light/Dark Mode'i, peab pärast 'Light/Dark Mode' nupu vajutamist vajutama ka 'Change Background' nuppu, et tumedale versioonile üle minna. Samamoodi on heleda versiooni peale tagasi minekuga - kõigepealt 'Light/Dark Mode' ja siis ka 'Change Background'. Aga kui enne heledalt tumeda peale üleminekut taustavärvi ei vahetata, toimib 'Light/Dark Mode' vahetus ühe nupu vajutusega. All paremas nurgas olevale autori nimele klikkides avaneb uues aknas antud GitHubi repositoorium. 
+
 # kodutoo-1
 Esimene kodutöö
 
