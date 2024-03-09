@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="clock.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kell</title>
+</head>
+<body>
+    <div id="color"></div>
+    <div id="bg" class="bg">
+        <img src="taustday.png" alt="dynamic_bg" id="bg">
+    </div>
+    <div id="clockCont">
+        <div id="clock">
+            <div id="hoursel"></div>
+            <div id="minutesel"></div>
+            <div id="secondsel"></div>
+        </div>
+        <div id="dateElement">
+            <div id="dayElement">Päev</div>
+            <div id="monthElement">Kuu</div>
+            <div id="yearElement">Aasta</div>
+        </div>
+        <div id="day">tänane päev:</div>
+        <div id="cat" class="cat">
+            <img src="catday.png" alt="dynamic_cat" id="cat">
+        </div>
+        <div id="name" class="name">
+            <p>Autor: Emma Mae Roodla</p>
+            <a href="https://github.com/kodukass/kodutoo-1">Githubi repositoorium</a>
+        </div>
+    </div>
+    
+    <audio id="catSound">
+        <source src="purr.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

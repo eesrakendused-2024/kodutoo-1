@@ -1,0 +1,93 @@
+#clock, #dateElement, #day{
+    display: flex;
+}
+
+#hoursel{
+    background-color: aqua;
+}
+
+#minutesel{
+    background-color: aquamarine;
+}
+
+#secondsel{
+    background-color: rgb(233, 255, 93);
+}
+
+#dateElement>div{
+    padding-right: 10px;
+}
+
+#clockCont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 241, 147);
+    border-style:dashed;
+    border-color: rgb(90, 193, 106);
+    border-width: 10px;
+    width: max-content;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#clock 
+{
+    font-size: 3em;
+}
+
+#dateElement 
+{
+    font-size: 3em;
+}
+
+.cat #cat
+{
+    position: absolute;
+    top:-100px;
+    left:0%;
+}
+
+.name #name
+{
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg #bg
+{
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+}
+
+/*html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}*/
+
+/*.border #border
+{
+    position: relative;
+    border: 50px;
+    border-image-source: url("border.png");
+    border-image-slice: 20 20 20 20;
+    border-image-repeat: round;
+}*/
+
+body {
+    border-bottom: 130px solid transparent; /* Set a thick transparent border */
+    border-image: url('border.png') 30 round; /* Set the border image */
+    /*padding: 20px; /* Add padding inside the border */
+    box-sizing: border-box; /* Include border and padding in the element's total width and height */
+}
