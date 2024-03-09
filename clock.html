@@ -17,51 +17,53 @@
     <title>Kell</title>
 </head>
 <body>
+    <header>
+        <div id="topContainer">
+            <div id="authorName">Liisi Loomets</div>
+            <div id="authorRepository">
+                <a href="https://github.com/LLoomets/Eesrakendused-Kell">Repositoorium <i class="fa-brands fa-github"></i></a>
+                
+            </div>
 
-    <div id="topContainer">
-        <div id="authorName">Liisi Loomets</div>
-        <div id="authorRepository">
-            <a href="https://github.com/LLoomets/Eesrakendused-Kell">Repositoorium <i class="fa-brands fa-github"></i></a>
-            
+            <div id="backgroundColorButton">Muuda taustavärvi
+                <button id="changeBackgroundColorButton" onclick="changeBackgroundColor()">CLICK</button>
+            </div>
         </div>
-
-        <div id="backgroundColorButton">Muuda taustavärvi
-            <button id="changeBackgroundColorButton" onclick="changeBackgroundColor()">CLICK</button>
+    </header>
+    <main>
+        <div id="clockContainer">
+            <div id="clock">
+                <div id="hours"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
+            </div>
+            <div id="dateElement">
+                <div id="day">Tänane kuupäev</div>
+                <div id="dayElement">kuupäev</div>
+                <div id="monthElement">kuu</div>
+                <div id="yearElement">aasta</div>
+            </div>
+            <div id="sliderContainer">
+                <label for="fontSizeSlider">Muuda kella suurust </label>
+                <input type="range" id="fontSizeSlider" min="1" max="15" step="0.1" value="7" oninput="updateFontSize()">
+            </div>
+            <div id="timezoneContainer">
+                <p id="timezoneText">Vaheta ajavööndi </p>
+                <select id="timezoneSelect" onchange="changeTimezone()">
+                    <option value="Europe/Tallinn">Eesti</option>
+                    <option value="America/New_York">New York</option>
+                    <option value="Asia/Tokyo">Tokyo</option>
+                    <option value="Europe/London">London</option>
+                </select>
+            </div>
         </div>
-    </div>
-
-    <div id="clockContainer">
-        <div id="clock">
-            <div id="hours"></div>
-            <div id="minutes"></div>
-            <div id="seconds"></div>
+    </main>
+    <footer>
+        <div id="audioContainer">
+            <audio controls>
+                <source src="piano-fireplace.mp3" type="audio/mp3">
+            </audio>
         </div>
-        <div id="dateElement">
-            <div id="day">Tänane kuupäev</div>
-            <div id="dayElement">kuupäev</div>
-            <div id="monthElement">kuu</div>
-            <div id="yearElement">aasta</div>
-        </div>
-        <div id="sliderContainer">
-            <label for="fontSizeSlider">Muuda kella suurust </label>
-            <input type="range" id="fontSizeSlider" min="1" max="15" step="0.1" value="7" oninput="updateFontSize()">
-        </div>
-        <div id="timezoneContainer">
-            <p id="timezoneText">Vaheta ajavööndi </p>
-            <select id="timezoneSelect" onchange="changeTimezone()">
-                <option value="Europe/Tallinn">Eesti</option>
-                <option value="America/New_York">New York</option>
-                <option value="Asia/Tokyo">Tokyo</option>
-                <option value="Europe/London">London</option>
-            </select>
-        </div>
-    </div>
-
-    <div id="audioContainer">
-        <audio controls>
-            <source src="piano-fireplace.mp3" type="audio/mp3">
-        </audio>
-    </div>
-
+    </footer>
 </body>
 </html>
