@@ -184,3 +184,8 @@ function updateDisplay() {
 }
 
 setInterval(toggleDisplayMode, 60000);
+
+function openGitHub() {
+    var githubLink = document.getElementById("githubLink");
+    window.open(githubLink.href, '_blank');
+}
