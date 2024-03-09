@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kell</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+    </style>
+    <div id="clockContainer">
+        <div id="dateTimeBox" class="box" onclick="toggleDateTime()">
+            <div id="time"></div>
+            <div id="date" class="hidden">
+                <div id="day"></div>
+                <div id="month"></div>
+                <div id="year"></div>
+                <div id="today"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="buttonContainer">
+        <button onclick="toggleClockFormat()">Clock Format</button>
+        <button onclick="toggleShowSeconds()">Seconds On/Off</button>
+        <button id="backgroundColorButton">Background Color</button>
+        <button onclick="toggleLanguage()">Date Language</button>
+    </div>
+    <button id="darkModeButton" onclick="toggleDarkMode()">Light/Dark Mode</button> 
+    <div id="author">Karmen Klaasen</div> 
+    <script src="clock.js" defer></script>
+</body>
+</html>
+
+<!-- http://greeny.cs.tlu.ee/~karasen/kodune/clock.html -->
