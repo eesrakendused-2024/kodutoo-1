@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <script src="clock.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main">
+        <div class="clock">
+            <div id="clock">
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span>
+            </div>
+        </div>
+        <div class="timeDate">
+            <div id="date">
+                <span id="dayElement">Kuupäev</span>
+                <span id="monthElement">Kuu</span>
+                <span id="yearElement">Aasta</span>
+                <span id="day">Tänane nädalapäev</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="button1" class="button">Arial</button>
+            <button id="button2" class="button">Times New Roman</button>
+            <button id="button3" class="button">Segoe UI</button>
+        </div>
+        <div class="player">
+            <audio loop id="audio" src="rain.webm"></audio>
+            <button id="playPause" class="button">Play</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Kristjan Sarv <a href="https://github.com/krisdjan/eesrakendused-kodutoo1">GITHUB</a></p>
+        <!-- <a href="www.google.com"> yikes</a> -->
+    </footer>
+</body>
+</html>
