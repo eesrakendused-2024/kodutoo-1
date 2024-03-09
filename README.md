@@ -19,6 +19,8 @@ Taustapilt:
 
 ![](media/screenshot.png)
 
+# Lisa:
+Ei õnnestunud asju läbi git push siia saada, palun andestage.
 
 # kodutoo-1
 Esimene kodutöö
