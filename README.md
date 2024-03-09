@@ -34,3 +34,8 @@ Kasutaja saab muuta ajavööndit kasutades rippmenüüd.
 Kasutaja saab panna käima ja pausile taustamuusika.
 
 ![Kuvatõmmis 2024-03-09 171343](https://github.com/LLoomets/Eesrakendused-Kell/assets/146342702/722266a1-51a2-48f2-b835-4b137cbe61f0)
+
+# Kasutatud allikad
+* Range stiliseerimine - https://www.w3schools.com/howto/howto_js_rangeslider.asp
+* Audio elemendi stiliseerimine - https://blog.shahednasser.com/how-to-style-an-audio-element/
+* GitHub logo - https://fontawesome.com/
