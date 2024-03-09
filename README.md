@@ -21,7 +21,7 @@ Klõpsates lehe all ääres pleieril ▶ ikoonil hakkab mängima autori lemmik l
 On ära määratud, et lehe vasakul servas on päikse ikoon kell 6:00-17:59. Päikse ikoon asendub kuu ikooniga 18:00-05:59.
 ![image](https://github.com/esteroja/Eesrakendused_kodutoo-1/assets/146342718/ae654c67-56dd-4fe9-901e-42c0bb6f07ed)
 ## 6. Teised ajatsoonid
-Lehekülg kuvab Seouli ja Los Angelese kellasid ja need tiksuvad paralleelselt eesti ajaga.
+Lehekülg kuvab Seouli(KST) ja Los Angelese(PST) kellaaegasid ja need tiksuvad paralleelselt Eesti ajaga.
 # Kasutatud allikad ja funktsioonid
 Inspiratsioon kujunduseks: https://codepen.io/gau/pen/LjQwGp
 <br>
