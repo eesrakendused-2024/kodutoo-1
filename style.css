@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+
+/* Main Body */
+#clockBody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(35, 35, 35);
+  height: 200px;
+  width: 900px;
+  border-radius: 25%;
+  box-shadow: 100%;
+}
+
+#clockFace {
+  background-color: rgb(51, 51, 51);
+  border-radius: 50%;
+}
+
+/* Time */
+#timeContainer {
+  font-family: "Kode Mono", monospace;
+  font-weight: 600;
+  font-size: 400%;
+  transform-origin: 50% 100%;
+  background-color: transparent;
+}
+
+/* Date */
+#dateContainer {
+  position: absolute;
+  background-color: rgb(51, 51, 51);
+  border-radius: 35%;
+  font-family: "Kode Mono", monospace;
+  font-weight: 600;
+  font-size: 200%;
+  width: 40%;
+  height: 30%;
+}
+
+#dayContainer {
+  position: absolute;
+  right: 5%;
+  bottom: 90%;
+  background-color: rgb(51, 51, 51);
+  display: inline-flex;
+  border-radius: 35%;
+  transform-origin: 50% left, 90% top;
+  width: 30%;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+/* Multivalues */
+#clockBody,
+#timeContainer,
+#dateContainer,
+#dayContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+#dateContainer,
+#dayContainer,
+#timeContainer {
+  position: relative;
+  color: rgb(231, 2, 2);
+}
+
+#timeContainer,
+#clockFace {
+  margin: 10px 30px 12px;
+}
+
+#yearContainer,
+#dateOfYearContainer,
+#monthContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  position: relative;
+  top: 15%;
+  left: 15%;
+}
+
+#comments {
+  background-color: gainsboro;
+  position: absolute;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  display: inline-flex;
+  z-index: 100;
+}
+
+/* Fullscreen */
+
+#clockBody.fullscreen {
+  height: 100%;
+  width: 100%;
+  border-radius: 0%;
+}
+
+#clockFace.fullscreen {
+  visibility: hidden;
+}
+
+#timeContainer.fullscreen {
+  visibility: visible;
+  background-color: unset;
+  font-size: 500%;
+  left: 30%;
+}
+
+#dateContainer.fullscreen {
+  font-size: 400%;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  top: 25%;
+}
+
+#dateOfYearContainer.fullscreen,
+#monthContainer.fullscreen,
+#yearContainer.fullscreen,
+#dayContainer.fullscreen {
+  position: relative;
+  visibility: visible;
+  display: flex;
+}
+
+#dayContainer.fullscreen {
+  background-color: transparent;
+  top: 80%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
