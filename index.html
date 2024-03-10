@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Digital Clock</title>
+  </head>
+  <body onload="toggleBackground()">
+    <div
+      class="card"
+      onclick="changeCardColor(this)"
+      style="background-color: white"
+    >
+      <div
+        class="clock"
+        id="clock"
+        onclick="event.stopPropagation()"
+        oncontextmenu="reduceNumberSize(event)"
+      ></div>
+      <div class="info" id="info" onclick="event.stopPropagation()"></div>
+      <div style="margin-bottom: 20px"></div>
+      <button class="button" onclick="changeFont(); event.stopPropagation()">
+        Change Font
+      </button>
+      <button
+        class="button"
+        onclick="changeLanguage(); event.stopPropagation()"
+      >
+        Change Language
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  color: black;
+}
+
+.clock {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blink {
+  animation: blink-animation 2s step-start infinite;
+}
+
+@keyframes blink-animation {
+
+  0%,
+  50% {
+    color: black;
+  }
+
+  25%,
+  100% {
+    color: transparent;
+  }
+}
+
+.info {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.white-text {
+  color: white;
+}
