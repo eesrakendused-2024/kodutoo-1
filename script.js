@@ -4,9 +4,6 @@ let fonts = ["Arial", "Verdana", "Helvetica", "Tahoma", "Trebuchet MS"];
 
 let fontSizeMap = new Map();
 
-let card = document.querySelector(".card");
-let cardPosition = { x: 50, y: 50 };
-
 let languages = ["ee", "en", "ru", "fr", "de", "es"];
 let languageIndex = 0;
 
@@ -58,7 +55,6 @@ function changeFont() {
 }
 
 function changeLanguage() {
-  console.log(languageIndex);
   languageIndex =
     languageIndex === languages.length - 1 ? 0 : languageIndex + 1;
 }

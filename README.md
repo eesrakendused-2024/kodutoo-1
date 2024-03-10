@@ -4,4 +4,6 @@ Germo Tael
 
 - Taust muutub vastavalt kas on öö või päev
 - Change font muutab fonti
-- Change Language muutab keelt
+- Change Language muudab keelt
+- Kella numbrite peale vajutamine muutab suurust
+- Kaarti peale vajutamine muutab värvi
