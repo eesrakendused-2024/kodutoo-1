@@ -1,4 +1,3 @@
-class dateClass{}
 let hours, minutes, seconds,day, month, year, dayValue;
 let months = ["Jaanuar", "Veebruar", "Märts", "Aprill"]
 let days = ["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"]
