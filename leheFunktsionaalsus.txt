@@ -2,5 +2,5 @@
 2. Vajutad kellale läheb kella tekst punaseks X
 3. vajutad päevle läheb kuupäev punaseks X
 4. vajutad nupule, siis näitab autorit X
-5. Autorit saab liigutada noole nuppudega X
-6. Taustale klikkides muudetakse kella taustaväri X
+5. Kella suurus ja asukoht sõltuvad hiire asukohast ekraanil X
+6. Vajutades + või - muutub teksti suurus X
