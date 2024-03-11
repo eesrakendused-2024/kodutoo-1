@@ -5,7 +5,7 @@ Funktsionaalsus:
   3. vajutad päevle läheb kuupäev punaseks 
   4. vajutad nupule, siis näitab autorit 
   5. Kella suurus ja asukoht sõltuvad hiire asukohast ekraanil
-  6. Taustale klikkides muudetakse kella taustaväri
+  6. Vajutades + või - muutub teksti suurus
 
 Kuidas leht välja näeb, kui selle lahti teed.
      ![image](https://github.com/JanMarkusK/kodutooJMK/assets/146342688/5cf56a49-86a6-404e-975a-6c33336a2224)
