@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="et" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Digitaalne kell koos kuupäevaga</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="initClock()">
+
+    <div class="author-info">
+        <p>Õnnela Link</p>
+        <p><a href="https://github.com/onnelaa/eesrakendused" target="_blank">Github</a></p>
+    </div>
+
+    <!--digital clock start-->
+    <div class="datetime">
+      <div class="date">
+        <span id="dayname">Päev</span>,
+        <span id="month">Kuu</span>
+        <span id="daynum">00</span>,
+        <span id="year">Aasta</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+      </div>
+    </div>
+    <!--digital clock end-->
+
+    <script type="text/javascript">
+    var fontSize = 60; // Kella vaikimisi fondi suurus
+
+    function updateClock(){
+      var now = new Date();
+      var dname = now.getDay(),
+          mo = now.getMonth(),
+          dnum = now.getDate(),
+          yr = now.getFullYear(),
+          hou = now.getHours(),
+          min = now.getMinutes(),
+          sec = now.getSeconds();
+
+      var months = ["Jaanuar", "Veebruar", "Märts", "Aprill", "Mai", "Juuni", "Juuli", "August", "September", "Oktoober", "November", "Detsember"];
+      var week = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
+      var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds"];
+      var values = [week[dname], dnum.pad(2), months[mo], yr, hou.pad(2), min.pad(2), sec.pad(2)];
+      for(var i = 0; i < ids.length; i++)
+        document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+      
+      // Kella suuruse seadistamine
+      document.querySelector('.time').style.fontSize = fontSize + 'px';
+    }
+
+    function initClock(){
+      updateClock();
+      window.setInterval("updateClock()", 1000);
+      
+      // Lisame event listenerid klaviatuurinuppudele "+" ja "-"
+      window.addEventListener('keydown', function(event) {
+        if (event.key === '+') {
+          fontSize += 5; // Suurendame fondi suurust 5px võrra
+          updateClock(); // Värskendame kella, et näidata muudetud suurust
+        } else if (event.key === '-') {
+          fontSize -= 5; // Vähendame fondi suurust 5px võrra
+          updateClock(); // Värskendame kella, et näidata muudetud suurust
+        }
+      });
+    }
+
+    Number.prototype.pad = function(digits){
+      for(var n = this.toString(); n.length < digits; n = 0 + n);
+      return n;
+    }
+    </script>
+
+  </body>
+</html>
