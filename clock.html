@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="clock.js" defer></script>
+    <link rel="stylesheet" href="clock.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Electronic Clock</title>
+</head>
+<h1>Eliana Leonova</h1>
+<h2 id="pealkiri">Elektrooniline kell</h2>
+<a target="_blank" href="https://github.com/leonova19/kodutoo-1">Github</a>
+
+
+<body>
+    <div>
+        <span>Kella suurus: </span>
+        <button id="increaseButton" onclick="increaseFontSize()">+</button>
+        <button id="decreaseButton" onclick="decreaseFontSize()">-</button>
+    </div>
+    <div id="clockContainer">
+        <div id="nupud">
+            <button id="värv">Kella värv</button>
+            <button id="keel1" onclick="changeLanguage('en')">Inglise keel</button>
+            <button id="keel1" onclick="changeLanguage('et')">Eesti keel</button>
+            <button id="tund" onclick="updateClockFormat('12')">12-tunnine</button>
+            <button id="tund" onclick="updateClockFormat('24')">24-tunnine</button>
+        </div>
+
+        <div id="clock">
+            <div id="hoursElement"></div>
+            <span>:</span>
+            <div id="minutesElement"></div>
+            <span>:</span>
+            <div id="secondsElement"></div>
+            <br>
+            <div id="pm"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="bottomEl">
+            <div id="dateElement">
+                <div id="dayElement"></div>
+                <div id="monthElement"></div>
+                <div id="yearElement"></div>
+            </div>
+            <div id="day"></div>
+        </div>
+    </div>
+</body>
+
+</html>
