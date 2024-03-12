@@ -1,0 +1,41 @@
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#clockContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#hoursel, #minutesel, #secondsel {
+    color: orange;
+    text-shadow: 0 0 8px white;
+    font-family: "Nixie One", system-ui;
+}
+
+#dateElement, #day {
+    color: rgb(0, 195, 255);
+    text-shadow: 0 0 8px white;
+    font-family: "VT323", monospace;
+    position: absolute;
+    font-size: 3vh;
+}
+
+#dateElement {
+    top: 1vh;
+}
+
+#info {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 1vh;
+    background-color: rgba(0, 0, 0);
+    color: white;
+}
