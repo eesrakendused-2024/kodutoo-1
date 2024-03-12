@@ -1,0 +1,9 @@
+Albert Berkman. Ma tegin lauakella mida kasutaja saab muuta. Seal on kõik mis vaja ja veel:
+1) Kui sa vajutad C-tähte siis muudad ekraani tausta värvi
+2) Kui vajutad päeva juures vaskule läheb 1 päev tagasi
+3) Kui vajutad päeva juures paremale läheb 1 päev edasi
+4) Vajuta + et suurendada kuupäeva fonti
+5) Vajuta - et vähendada kuupäeva fonti
+6) Peida nupp peidab lisa texti
+
+Link lehele: http://greeny.cs.tlu.ee/~albkman/ERA24/kodutoo-1/clock.html
