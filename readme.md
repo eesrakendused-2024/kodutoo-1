@@ -9,3 +9,4 @@ Screenshotid rakendusest:
 Rakendus on tehtud näitamaks reaalajas nädalapäeva, kuupäeva/kuud, aastat ja kella. 
 Kui kasutaja liigub hiirega kella kasti sisse, siis muutub tausta värvus ja kast hakkab "helendama". 
 Kasutaja saab ka +/- klahvidega muuta soovi korral kella suurust. 
+Näidiseks on võetud kood (ja yt video): https://www.codingsnow.com/2021/01/digital-clock-with-date-day-month-year.html#google_vignette kuid muudetud disaini, kuupäeva/kellaaja formaati ja lisatud juurde kella suuruse muutmine. 
