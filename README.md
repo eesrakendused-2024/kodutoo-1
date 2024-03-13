@@ -1,5 +1,16 @@
 # kodutoo-1
 Esimene kodutöö
+`README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+
+Autor: Marina Kuznetsova
+
+Elektorooniline kell.
+- Kella suuruse muutmine nuppudega '+' ja '-'
+- Fonti valimine
+- Tausta värvi muutmine 'change color' nupule klõpsamisega.
+- Numbrite värvi muutmine numbrite peale klõpsamisega
+- Keele valimine 'est' ja 'eng'
+- 
 
 ## Tähtaeg 09.03.2024 23:59
 

@@ -1,0 +1,121 @@
+body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-weight: bold;
+    background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+    background-repeat: repeat; 
+
+}
+#github {
+    font-size: 30px;
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+}
+#name {
+    position: absolute;
+    top: 4%;
+    left: 1%;
+    font-size: 25px;
+    color: black;
+}
+
+#fontSelectorContainer{
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    font-size: 23px;
+}
+
+#clockSize {
+    position: absolute;
+    bottom: 6%;
+    left: 1%;
+    font-size: 23px;
+}
+
+
+ #languageSelector {
+    position: absolute;
+    top: 4%;
+    right: 1%;
+    font-size: 25px;
+ }
+
+ #increaseButton, #decreaseButton, #estButton, #engButton {
+    background-color: white;
+    font-size: 16px;
+    padding: 5px; 
+    margin: 5px; 
+    border-radius: 8px;
+    border-color: lightgrey;
+}
+
+ #changeColorButton {
+    background-color:  white;
+    position: absolute;
+    bottom: 13%;
+    left: 1%;
+    font-size: 18px;
+    border-radius: 8px;
+    border-color: lightgrey;
+ }
+
+
+#clockContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#hoursElement, #minutesElement, #secondsElement {
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+#dateElement {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10%;
+
+}
+
+#day {
+    font-size: 35px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 5px;
+    transform: translateX(-50%) ;
+}
+
+#dayElement, #monthElement, #yearElement {
+    display: flex;
+    margin-right: 5px;
+    font-size: 30px;
+    color: black;
+}
+
+
+
+
+
+

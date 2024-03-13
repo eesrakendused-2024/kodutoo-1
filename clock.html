@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <script src="clock.js" defer></script>
+    <title>Electronic Clock</title>
+</head>
+
+<body>
+    <div id="fontSelectorContainer">
+        <label for="fontSelector">Font:</label>
+        <select id="fontSelector">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Lucida Console">Lucida Console</option>
+        </select>
+    </div>
+    <div id="clockSize">
+        <span>Clock Size: </span>
+        <button id="increaseButton">+</button>
+        <button id="decreaseButton">-</button>
+    </div>
+    <div id="languageSelector">
+        <button id="estButton">est</button>
+        <button id="engButton">eng</button>
+    </div>    
+    <div>
+    <button id="changeColorButton">Change Color</button>
+    </div>
+    <div id = "github">
+        <a target="_blank" href="https://github.com/mkzntsva/kodutoo-1">Github</a>
+    </div>
+    <div id="name">Marina Kuznetsova</div>
+    <div id="clockContainer">
+        <div id="clock">
+            <div id="hoursElement"></div>
+            <div id="minutesElement"></div>
+            <div id="secondsElement"></div>
+        </div>
+    </div>
+    <div id="dateElement">
+        <div id="dayElement"></div>
+        <div id="day"></div>
+        <div id="monthElement"></div>
+        <div id="yearElement"></div>
+    </div>
+</body>
+</html>
