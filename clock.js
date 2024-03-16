@@ -16,6 +16,23 @@ function textSize(e){
     }
 }
 
+document.getElementById('font1').addEventListener('click', function() {
+    document.querySelectorAll('*').forEach(function(element) {
+        element.style.fontFamily = 'Georgia, serif';
+    });
+});
+
+document.getElementById('font2').addEventListener('click', function() {
+    document.querySelectorAll('*').forEach(function(element) {
+        element.style.fontFamily = 'Times New Roman, serif';
+    });
+});
+
+document.getElementById('font3').addEventListener('click', function() {
+    document.querySelectorAll('*').forEach(function(element) {
+        element.style.fontFamily = 'Comic Sans MS';
+    });
+});
 
 document.getElementById('color1').addEventListener('click', function() {
     document.body.style.backgroundColor = 'lightblue';
@@ -34,8 +51,7 @@ document.getElementById('clockColor2').addEventListener('click', function() {
     document.getElementById('clock').style.color = 'white';
 });
 document.getElementById('clockColor3').addEventListener('click', function() {
-    document.getElementById('clock').style.color = 'grey';
-    
+    document.getElementById('clock').style.color = 'grey'; 
 });
 
 document.getElementById('dateColor1').addEventListener('click', function() {
