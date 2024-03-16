@@ -1,0 +1,35 @@
+body{
+    background-color: white;
+}
+
+#clockContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+#clock, #dateElement{
+    display: flex;
+}
+
+#dateElement>div{
+    padding-right: 5px;
+}
+
+#headerWrap{
+    display: flex
+}
+
+.changes{
+    margin-right: 20px;
+}
+
+#progressBar {
+    width: 0;
+    height: 20px;
+    background-color: black;
+    transition: width 1s;
+    display: none;
+}

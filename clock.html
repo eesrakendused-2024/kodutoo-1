@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="clock.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kell</title>
+</head>
+<body>
+    <div id="clockContainer">
+        <div id="clock">
+            <div id="hoursElement"></div>
+            <div id="minutesElement"></div>
+            <div id="secondsElement"></div>
+        </div>
+        <div id="dateElement">
+            <div id="dayElement">kuupaev</div>
+            <div id="monthElement">kuu</div>
+            <div id="yearElement">aasta</div>
+        </div>
+        <div id="day">nädalapaev</div>
+        <div id="progressBar"></div>
+        <div id="author">Hugo Luca Tigane</div> 
+    </div>
+    <hr id="hr">
+    <div id="headerWrap">
+        <div class="changes">
+            <h2>Vali tagatausta värv</h2>
+            <div id="color1">Sinine</div>
+            <div id="color2">Punane</div>
+            <div id="color3">Roheline</div>
+        </div>
+        <div class="changes">
+            <h2>Vali kella värv</h2>
+            <div id="clockColor1">Kollane</div>
+            <div id="clockColor2">Valge</div>
+            <div id="clockColor3">Hall</div>
+        </div>
+        <div class="changes">
+            <h2>Vali kuupäeva värv</h2>
+            <div id="dateColor1">Lilla</div>
+            <div id="dateColor2">Valge</div>
+            <div id="dateColor3">Oranz</div>
+        </div>
+        <div class="changes">
+            <h2>Vali nädalapäeva värv</h2>
+            <div id="dayColor1">Kuldne</div>
+            <div id="dayColor2">Tume Sinine</div>
+            <div id="dayColor3">Pruun</div>
+        </div>
+        <div class="changes">
+            <h2>Värvikombod</h2>
+            <div id="combo1">Must ja valge</div>
+            <div id="combo2">Must ja kollane</div>
+            <div id="combo3">Punane ja sinine</div>
+        </div>
+        <div class="changes">
+            <h2>Muuda fonti</h2>
+            <div id="font1">Georgia</div>
+            <div id="font2">Times new roman</div>
+            <div id="font3">Comic sans</div>
+        </div>
+        <div class="changes">
+            <h2>Muuda kella suurust</h2>
+            <button id="sizeUp">+</button>
+            <button id="sizeDown">-</button>
+        </div>
+    </div>
+    <p id="reset">Taasta algne kell</p>
+    <a href="https://github.com/HugoLucaT/kodutoo-1">Link githubi</a>
+    <Button id="showBar">Näita/peida minuti progressi</Button>
+    <Button id="showAuthor">Näita/peida autorit</Button>
+</body>
+</html>
